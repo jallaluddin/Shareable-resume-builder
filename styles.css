@@ -1,0 +1,261 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  background-image: url('https://www.blueskyresumes.com/wp-content/uploads/banner_swoosh.jpg');
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+/* Form Section */
+.form-section {
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: bold; 
+  color: #2c3e50;
+  font-size: 1.2rem; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: large;
+  color: #333;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #34495e;
+}
+
+/* Resume Section */
+.resume-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  
+  margin-top: 2rem;
+}
+
+.resume {
+  width: 100%;
+  background-color: #2c3e50;
+  padding: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  
+  gap: 2rem; 
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 2px solid #fafbfc;
+  object-fit: cover;
+  
+}
+
+.resume h2 {
+  font-size: 2.4rem; 
+  color: #fafbfc;
+  font-weight: bold; 
+  text-align: left;  
+  margin-top: 1rem;
+}
+
+.resume h3 {
+  font-size: 1.4rem; 
+  color: #f8f9fa;
+  font-weight: bold; 
+  text-align: left;  
+  margin-top: 1rem;
+}
+
+.resume p {
+  font-size: 1.2rem;
+  color: #d5d6d8;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+  text-align: left;  
+}
+
+.resume .sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;  
+  text-align: left; 
+}
+
+.resume .contact-info {
+  margin-top: 1rem;
+  text-align: left; 
+}
+
+.resume .contact-info p {
+  margin: 0.5rem 0;
+}
+
+ul {
+  list-style: none;
+  text-align: left; 
+  color:#d5d6d8 ;
+}
+
+ul li {
+  margin-top: 10px;
+  margin-bottom: 0.5rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .resume {
+      padding: 1rem;
+  }
+
+  .resume h2 {
+      font-size: 1.8rem; 
+  }
+
+  button {
+      font-size: 1rem;
+  }
+
+  .resume h3 {
+      font-size: 1.2rem;
+      font-weight: bold;
+  }
+
+  .resume p {
+      font-size: 1rem;
+  }
+
+  
+  .resume .skills {
+      gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume {
+      padding: 1rem;
+  }
+
+  .resume h2 {
+      font-size: 1.8rem; 
+  }
+
+  button {
+      font-size: 1rem;
+  }
+
+  .resume h3 {
+      font-size: 1.2rem;
+      font-weight: bold;
+  }
+
+  .resume p {
+      font-size: 1rem;
+  }
+
+ 
+  .resume .skills {
+      gap: 1rem;
+  }
+}
+
+button.edit-button {
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: block;
+}
+
+button.edit-button:hover {
+  background-color: #1976D2;
+}
+
+
+
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+#share-resume,#download-pdf {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  background-color: #898a8b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#share-resume:hover, #download-pdf:hover {
+  background-color: #203f53;
+}

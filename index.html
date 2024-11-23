@@ -13,12 +13,9 @@
        
         <div class="form-section">
             <h1> Shareable Resume Builder</h1>
-            <p><strong>By Jalal</strong></p>
             <form id="resume-form">
                 <h2>Personal Information</h2>
-                <label for="username">UserName:</label>
-                <input type="text" id="username" name="username" required>
-
+                <input type="file" id="profile-image" name="profile-image" accept="image/*" required>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -38,24 +35,22 @@
                 <textarea id="about" name="about" rows="3" required></textarea>
 
                 <h2>Education</h2>
-                <label for="education">Education (Year, Degree, Institution):</label>
+                <label for="education">Enter your education:</label>
                 <textarea id="education" name="education" rows="3" required></textarea>
 
                 <h2>Work Experience</h2>
-                <label for="experience">Experience (Year, Job Title, Company):</label>
+                <label for="experience">Enter your experience:</label>
                 <textarea id="experience" name="experience" rows="3" required></textarea>
 
                 <h2>Skills</h2>
-                <label for="skills">Skills (Comma separated):</label>
+                <label for="skills">Enter your skills:</label>
                 <input type="text" id="skills" name="skills" required>
 
                 <h2>Languages</h2>
-                <label for="languages">Languages (Comma separated):</label>
+                <label for="languages">Languages you speak:</label>
                 <input type="text" id="languages" name="languages" required>
 
-                <h2>Profile Image</h2>
-                <label for="profile-image">Upload Profile Image:</label>
-                <input type="file" id="profile-image" name="profile-image" accept="image/*" required>
+                
 
                 <button id="generate-button" type="button">Generate Resume</button>
                 <button id="edit-button" type="button" >Edit Resume</button>
@@ -74,6 +69,6 @@
     </div>
 
 
-    <script src="main.js" type="module"></script>
+    <script src="script.js" type="module"></script>
 </body>
 </html> 
